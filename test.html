@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Reserve</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="icon" href="https://img.pikbest.com/origin/09/08/90/25GpIkbEsTwmE.png!sw800" type="image/png">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f79ebc; /* สีพื้นหลัง */
+      margin: 0;
+      padding: 0;
+    }
+
+    nav.navbar {
+      margin-bottom: 0; /* ไม่ให้ Navbar มีช่องว่างด้านล่าง */
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 13px;
+      background-color: #fce4ec;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-top: 50px;
+      border-radius: 10px;
+    }
+
+    select, input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #ff4081; /* สีปุ่ม */
+      color: #fce4ec;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #ff4081; /* สีเมื่อโฮเวอร์ปุ่ม */
+    }
+    .btn-group-sm>.btn, .btn-sm {
+    padding: 10px;
+    font-size: .875rem;
+    line-height: 1.5;
+    border-radius: 5px;
+}
+.btn-info {
+    color: #fce4ec;
+    background-color: #ff4081;
+    border-color: #ff4081;
+}
+  </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="https://as1.ftcdn.net/v2/jpg/02/50/44/26/1000_F_250442697_2du3OJo54m2tCmcWGGoNuiETEW8Z3v5v.jpg" style="width: 32px; height: auto;">
+         ...Filo
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">หน้าแรก</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">บริการ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">ติดต่อเรา</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Loginmowmow.html">เข้าสู่ระบบ</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <head>
+    <meta charset="UTF-8">
+    <title>แสดงรูปแมว</title>
+    <style>
+      body {
+        background-color: #fce4ec; /* สีพื้นหลัง */
+      }
+      .container {
+        width: 700px;
+        margin: 0 auto;
+      }
+      .album {
+        width: 200px;
+        height: 200px;
+        float: left;
+        margin: 30px 10px;
+        border: 1px solid #000;
+        border-radius: 5px;
+      }
+      .album img {
+        width: 100%;
+        height: 100%;
+      }
+      .album .title {
+        font-size: 18px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>อัลบั้มรูปแมว</h1>
+      <div class="album" data-album="1">
+        <img src="cat1.jpg" alt="แมวตัวที่ 1">
+        <div class="title">แมวตัวที่ 1</div>
+      </div>
+      <div class="album" data-album="2">
+        <img src="cat2.jpg" alt="แมวตัวที่ 2">
+        <div class="title">แมวตัวที่ 2</div>
+      </div>
+      <div class="album" data-album="3">
+        <img src="cat3.jpg" alt="แมวตัวที่ 3">
+        <div class="title">แมวตัวที่ 3</div>
+      </div>
+      <div class="album" data-album="4">
+        <img src="cat4.jpg" alt="แมวตัวที่ 4">
+        <div class="title">แมวตัวที่ 4</div>
+      </div>
+      <div class="album" data-album="4">
+        <img src="cat4.jpg" alt="แมวตัวที่ 5">
+        <div class="title">แมวตัวที่ 5</div>
+      </div>
+      <div class="album" data-album="4">
+        <img src="cat4.jpg" alt="แมวตัวที่ 6">
+        <div class="title">แมวตัวที่ 6</div>
+      </div>
+    </div>
+    <script>
+      function showAllImages(albumId) {
+        var albums = document.querySelectorAll(".album");
+        for (var i = 0; i < albums.length; i++) {
+          if (albums[i].dataset.album == albumId) {
+            albums[i].style.display = "block";
+          } else {
+            albums[i].style.display = "none";
+          }
+        }
+      }
+    </script>
+  </body>
+  </html>
