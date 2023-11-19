@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Information</title>
+  <style>
+    #map {
+      height: 400px;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <!-- แสดงแผนที่ Google Maps -->
+  <h2>Location</h2>
+  <div id="map"></div>
+
+  <!-- ข้อมูลการติดต่อ -->
+  <h2>Contact Information</h2>
+  <p>Email: example@example.com</p>
+  <p>Phone: +1 234-567-8900</p>
+
+  <!-- สคริปต์แสดงแผนที่ -->
+  <script>
+    function initMap() {
+      // ตำแหน่งสำหรับแผนที่
+      var location = {lat: 37.7749, lng: -122.4194}; // เปลี่ยนตำแหน่งตามที่ต้องการ
+
+      // สร้างแผนที่ Google Maps
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 15,
+        center: location
+      });
+
+      // แสดงเครื่องหมายบนแผนที่
+      var marker = new google.maps.Marker({
+        position: location,
+        map: map,
+        title: 'Location Title' // เปลี่ยนชื่อตำแหน่ง
+      });
+    }
+  </script>
+  <!-- สคริปต์โหลดแผนที่ -->
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+</body>
+</html>
