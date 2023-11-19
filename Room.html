@@ -2,111 +2,133 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Cat Rooms</title>
+  <title>Meow Choose Room</title>
+  <link rel="icon" href="https://as1.ftcdn.net/v2/jpg/02/50/44/26/1000_F_250442697_2du3OJo54m2tCmcWGGoNuiETEW8Z3v5v.jpg">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped&display=swap">
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped&display=swap');
     body {
-            background-color: #fce4ec; /* สีชมพูขาว */
-            color: #333; /* สีตัวอักษร */
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-
-        h1, h2 {
-            color: #fff; /* สีข้อความหัวเรื่อง */
-            background-color: #e91e63; /* สีชมพู */
-            padding: 10px;
-        }
-
-        form, table {
-            margin-top: 20px;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-
-        th, td {
-            padding: 10px;
-            text-align: left;
-        }
-
-        th {
-            background-color: #e91e63; /* สีชมพู */
-            color: #fff;
-        }
-
-        tr:nth-child(even) {
-            background-color: #f8bbd0; /* สีชมพูอ่อน (เพื่อให้ตารางมีลักษณะทางสี) */
-        }
-
-        button {
-            background-color: #e91e63; /* สีชมพู */
-            color: #fff;
-            padding: 8px 12px;
-            border: none;
-            cursor: pointer;
-        }
-
-        {
-            text-decoration: none;
-            color: #e91e63; /* สีชมพู */
-            margin-right: 10px;
-        }
-    /* Add your styles for better presentation */
-    .room {
-      border: 1px solid #ccc;
-      padding: 20px;
-      margin-bottom: 20px;
-      border-radius: 5px;
+      font-family: 'IBM Plex Sans Thai Looped';
+      background-color: #f8f9fa;
+      background: url('https://cdn.discordapp.com/attachments/1045034171313176687/1175657824806764655/IMG_0921.jpg?ex=656c07ac&is=655992ac&hm=078a2c1282f262fb2fb0da3bea245fde6837eeb32cd9402432f5f6f1f97f33ad&') repeat;
     }
-    h2 {
-      color: #333;
+    .navbar {
+      background-color: #fde3e9;
     }
-    ul {
-      list-style-type: none;
-      padding: 0;
+    .navbar-brand {
+      font-size: 24px;
+      font-weight: bold;
     }
-    li {
-      margin-bottom: 5px;
+    .nav-link {
+      font-size: 18px;
     }
-    .room img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 5px;
+    .header {
+      background-color: #faa1b6;
+      padding: 100px 0;
+      text-align: center;
+    }
+    .header h1 {
+      font-size: 48px;
       margin-bottom: 10px;
+    }
+    .header p {
+      font-size: 24px;
+    }
+    .card {
+      margin-bottom: 50px;
+    }
+    .footer {
+      background-color: #efafbe;
+      color: white;
+      padding: 50px 0;
+      text-align: center;
     }
   </style>
 </head>
 <body>
     <center>
-  <div class="room">
-    <h2>Standard Room</h2>
-    <p>จำนวน: 1 ตัว/ห้อง</p>
-    <p>ราคา/ห้อง: 250 บาท</p>
-    <img src="https://f.ptcdn.info/238/052/000/1499176355-IMG3712JPG-o.jpg" alt="Standard Room Image"style="width: 50%;">
-  </div>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="https://as1.ftcdn.net/v2/jpg/02/50/44/26/1000_F_250442697_2du3OJo54m2tCmcWGGoNuiETEW8Z3v5v.jpg" style="width: 32px; height: auto;">
+         ...Filo
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">หน้าแรก</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">บริการ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">ติดต่อเรา</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Loginmowmow.html">เข้าสู่ระบบ</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-  <div class="room">
-    <h2>Superior Room</h2>
-    <p>จำนวน: 3 ตัว/ห้อง</p>
-    <p>ราคา/ห้อง: 450 บาท</p>
-    <img src="https://discord.com/channels/1047574727713112074/1047574727713112077/1175638782633058314" alt="Superior Room Image"style="width: 50%;">
+  <div class="container-fluid" style="height: 32px;"></div>
+  <header class="header">
+    <h1>Filo: ประเภทของห้องพัก</h1>
+    <p class="lead">เราให้บริการฝากเลี้ยงแมวอย่างมืออาชีพ ด้วยประสบการณ์มายาวนาน เราให้ความสำคัญกับความปลอดภัยและความสบายใจของแมวทุกตัว</p>
+  </header>
+  <div class="container-fluid" style="height: 32px;"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="card h-100">
+          <img src="https://f.ptcdn.info/238/052/000/1499176355-IMG3712JPG-o.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Standard Room</h5>
+            <p class="card-text">จำนวน: 1 ตัว/ห้อง </p>
+            <p class="card-text">ราคา/ห้อง: 250 บาท </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card h-100">
+          <img src="https://www.thepremiercathotel.com/wp-content/uploads/2019/02/Premier-Cat-Hotel-Suite-Room-website-Homepage-1.jpg" class="card-img-top" alt="Image of Superior room type">
+          <div class="card-body">
+            <h5 class="card-title">Superior Room</h5>
+            <p class="card-text">จำนวน: 3 ตัว/ห้อง </p>
+            <p class="card-text">ราคา/ห้อง: 450 บาท </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card h-100">
+          <img src="https://cdn.discordapp.com/attachments/1045034171313176687/1175656327696097371/382485840_1514546109369946_4803208129226653550_n.png?ex=656c0647&is=65599147&hm=5e94bfc9d017da8679ac8457c4f9d52fd411a08852a2f2154499b3cf47d31b0a&" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Deluxe Room</h5>
+            <p class="card-text">จำนวน: 6 ตัว/ห้อง </p>
+            <p class="card-text">ราคา/ห้อง: 550 บาท </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card h-100">
+          <img src='mow1.png' class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Suite Room</h5>
+            <p class="card-text">จำนวน: 10 ตัว/ห้อง </p>
+            <p class="card-text">ราคา/ห้อง: 900 บาท </p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-
-  <div class="room">
-    <h2>Deluxe Room</h2>
-    <p>จำนวน: 6 ตัว/ห้อง</p>
-    <p>ราคา/ห้อง: 550 baht</p>
-    <img src="https://discord.com/channels/1047574727713112074/1047574727713112077/1175639644692549653"style="width: 50%;">
-  </div>
-
-  <div class="room">
-    <h2>Suite Room</h2>
-    <p>จำนวน: 10 ตัว/ห้อง</p>
-    <p>ราคา/ห้อง: 900 บาท</p>
-    <img src="https://lh3.googleusercontent.com/p/AF1QipN4En_lG0sDqjUXOnD_r0mlcmC73MjfAwNGhP0n=w1080-h608-p-k-no-v0" alt="Suite Room Image"style="width: 50%;">
-  </div>
+  <div class="container-fluid" style="height: 32px;"></div>
+  <!-- Add Bootstrap JS and Popper.js scripts for Bootstrap features -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-dfe3Zk+4hvKVthL5ZbNOGx3wZlO6qc/tFR83A7jv1d7UqqVZlVz1Go5kXeIJsTc" crossorigin="anonymous"></script>
 </body>
 </html>
 
