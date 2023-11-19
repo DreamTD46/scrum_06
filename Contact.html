@@ -2,45 +2,60 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Contact Information</title>
+  <title>ติดต่อและสถานที่ตั้ง</title>
   <style>
-    #map {
-      height: 400px;
-      width: 100%;
+    body {
+      background-color: #FFC0CB; /* สีชมพูขาว */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      font-size: 20px; /* ขนาดตัวอักษร */
+    }
+    .container {
+      background-color: #FFFFFF; /* พาสเทล */
+      padding: 30px;
+      border: 3px solid #000000; /* กรอบสี่เหลี่ยม */
+      border-radius: 10px;
+      max-width: 600px;
+      text-align: center;
+    }
+    .contact-info {
+      text-align: left;
+      margin-bottom: 20px;
+    }
+    .location {
+      margin-top: 20px;
+    }
+    h1, h3 {
+      color: #000000; /* สีตัวอักษร */
+    }
+    p {
+      margin: 8px 0; /* ระยะห่างของย่อหน้า */
+    }
+    a {
+      text-decoration: none;
+      color: #0000FF; /* สีลิงก์ */
     }
   </style>
 </head>
 <body>
-  <!-- แสดงแผนที่ Google Maps -->
-  <h2>Location</h2>
-  <div id="map"></div>
-
-  <!-- ข้อมูลการติดต่อ -->
-  <h2>Contact Information</h2>
-  <p>Email: filo.cathotel@gmail.com</p>
-  <p>Phone: +66 123456789</p>
-
-  <!-- สคริปต์แสดงแผนที่ -->
-  <script>
-    function initMap() {
-      // ตำแหน่งสำหรับแผนที่
-      var location = {lat: 37.7749, lng: -122.4194}; // เปลี่ยนตำแหน่งตามที่ต้องการ
-
-      // สร้างแผนที่ Google Maps
-      var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 15,
-        center: location
-      });
-
-      // แสดงเครื่องหมายบนแผนที่
-      var marker = new google.maps.Marker({
-        position: location,
-        map: map,
-        title: 'Filo Cathotel' // เปลี่ยนชื่อตำแหน่ง
-      });
-    }
-  </script>
-  <!-- สคริปต์โหลดแผนที่ -->
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+  <div class="container">
+    <h1>ติดต่อและสถานที่ตั้ง</h1>
+    <div class="contact-info">
+      <h3>ช่องทางการติดต่อ:</h3>
+      <p>อีเมล: Filocathotel@gmail.com</p>
+      <p>โทรศัพท์: 012-345-6789</p>
+      <p>Line ID: Filo.CatHotel</p>
+      <p>Facebook: <a href="https://www.facebook.com/example">Example Page</a></p>
+    </div>
+    <div class="location">
+      <h3>สถานที่ตั้ง:</h3>
+      <p>ที่อยู่: 123 ถนนสุขสวัสดิ์, เขตบางกะปิ, กรุงเทพฯ</p>
+      <p>พิกัดที่ตั้ง: 13.7563° N, 100.5018° E</p>
+    </div>
+  </div>
 </body>
 </html>
