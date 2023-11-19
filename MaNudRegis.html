@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ลงทะเบียนแมว</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #fce4ec;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #container {
+            position: relative;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            max-width: 600px;
+            width: 100%;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        header {
+            background: linear-gradient(to right, #ec407a, #bf4080);
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        form {
+            padding: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #ec407a;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border: 1px solid #ec407a;
+            border-radius: 5px;
+        }
+
+        input:focus,
+        select:focus,
+        textarea:focus {
+            outline: none;
+            border-color: #bf4080;
+        }
+
+        button {
+            position: relative;
+            background: linear-gradient(to right, #ec407a, #bf4080);
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: linear-gradient(to right, #bf4080, #ec407a);
+        }
+
+        #container:hover {
+            transform: scale(1.05);
+        }
+
+        #personalInfoBlock {
+            padding: 20px;
+            background-color: #f8bbd0;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="container">
+        <header>
+            <h1>ลงทะเบียนผู้ใช้บริการ</h1>
+        </header>
+
+        <form id="catRegistrationForm">
+            <div>
+                <label for="้nUser">Username :</label>
+                <input type="text" id="nUser" name="nUser" required>
+            </div>
+
+            <div>
+                <label for="้nPass">Password</label>
+                <input type="text" id="nPass" name="้nPass" required>
+            </div>
+            <div><a href="ManudLogin.html"><button type="button">ยืนยัน</button></a></div>
+
+            <div>
+                <a href="Completed.html"><button type="button" onclick="submitForm()</button></a>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        function submitForm() {
+            var nName = document.getElementById('nName').value;
+            var nLine = document.getElementById('nLine').value;
+            var nLocation = document.getElementById('nLocation').value;
+            var nNumber = document.getElementById('nNumber').value;
+
+
+            console.log('ชื่อ:', catName);
+            console.log('ไอดีไลน์:', catGender);
+            console.log('ที่อยู่:', catAge);
+            console.log('เบอร์ติดต่อ:', catBreed);
+
+
+        }
+    </script>
+
+</body>
+
+</html>
