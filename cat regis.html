@@ -12,9 +12,8 @@ Cat register
             margin: 0;
             padding: 0;
             background: #f3e5f5;
-            <<<<<<< HEAD color: #000000;
-            =======color: #311b92;
-            >>>>>>>b1d5bda09b1ed4e83c403afe1214e536029b92f4 display: flex;
+            color: #311b92;
+            display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
@@ -65,17 +64,12 @@ Cat register
         select:focus,
         textarea:focus,
         button:focus {
-            <<<<<<< HEAD border-color: #bf4080;
-        }
-
-        button {
-            background: linear-gradient(to right, #ec407a, #bf4080);
-            =======border-color: #7b1fa2;
+            border-color: #7b1fa2;
         }
 
         button {
             background: linear-gradient(to right, #ab47bc, #7b1fa2);
-            >>>>>>>b1d5bda09b1ed4e83c403afe1214e536029b92f4 color: #fff;
+            color: #fff;
             cursor: pointer;
             transition: background 0.3s;
         }
@@ -110,9 +104,7 @@ Cat register
             display: flex;
             align-items: center;
             margin-bottom: 16px;
-            <<<<<<< HEAD color: #bf4080;
-            =======color: #7b1fa2;
-            >>>>>>>b1d5bda09b1ed4e83c403afe1214e536029b92f4
+            color: #7b1fa2;
         }
 
         .form-check-input {
@@ -125,7 +117,7 @@ Cat register
 
     <div id="container">
         <header>
-            <h1>ลงทะเบียนข้อมูลแมว</h1>
+            <h1>ข้อมูลของแมว ๆ</h1>
         </header>
 
         <form id="catRegistrationForm">
@@ -162,22 +154,14 @@ Cat register
             <div class="row">
                 <div class="col-md-6">
                     <div class="form-check">
-                        <<<<<<< HEAD <input class="form-check-input" type="checkbox" id="spayed1" style="width: 30px;"
-                            spayed1">
-                            =======
-                            <input class="form-check-input" type="checkbox" id="spayed1" name="spayed1">
-                            >>>>>>> b1d5bda09b1ed4e83c403afe1214e536029b92f4
-                            <label class="form-check-label" for="spayed1">ทำหมัน</label>
+                        <input class="form-check-input" type="checkbox" id="spayed1" name="spayed1">
+                        <label class="form-check-label" for="spayed1">ทำหมัน</label>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="form-check">
-                        <<<<<<< HEAD <input class="form-check-input" type="checkbox" id="spayed2" style="width: 30px;"
-                            name="spayed2">
-                            =======
-                            <input class="form-check-input" type="checkbox" id="spayed2" name="spayed2">
-                            >>>>>>> b1d5bda09b1ed4e83c403afe1214e536029b92f4
-                            <label class="form-check-label" for="spayed2">ไม่ทำหมัน</label>
+                        <input class="form-check-input" type="checkbox" id="spayed2" name="spayed2">
+                        <label class="form-check-label" for="spayed2">ไม่ทำหมัน</label>
                     </div>
                 </div>
             </div>
@@ -193,7 +177,7 @@ Cat register
             </div>
 
             <div>
-                <a href="Completed.html"><button type="button" onclick="submitForm()">ลงทะเบียน</button>
+                <button type="button" onclick="submitForm()">ลงทะเบียน</button>
             </div>
         </form>
     </div>
@@ -218,6 +202,8 @@ Cat register
             console.log('ทำหมัน:', spayed1 ? 'ทำหมันแล้ว' : (spayed2 ? 'ไม่ทำหมัน' : ''));
             console.log('โรค:', disease);
             console.log('รูปแมวประกอบ:', catImage ? catImage.name : 'ไม่ได้แนบรูป');
+
+            alert('ลงทะเบียนแมวเรียบร้อยแล้ว!');
         }
     </script>
 
