@@ -4,19 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ลงทะเบียนแมว</title>
+    <title>คาเมร่า</title>
     <style>
-        body {  
-      background: url('https://static.vecteezy.com/system/resources/previews/003/423/841/non_2x/cute-cat-cartoon-doodle-seamless-pattern-background-wallpaper-vector.jpg?fbclid=IwAR1TiHVfh8vRuNPlAjSfh8XdGCU_ZtAz5XVViig0Pj-qSqq0L_QD_2zpTiM') repeat;
-
+        body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background: #fce4ec;
             color: #333;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
+            text-align: center;
+            background-image: url(https://png.pngtree.com/background/20210716/original/pngtree-cute-looking-up-cat-picture-image_1362784.jpg);
+            backdrop-filter: blur(1.25px);
         }
 
         #container {
@@ -50,7 +52,7 @@
         input,
         select,
         textarea {
-            width: 100%;
+            width: 80%;
             padding: 8px;
             margin-bottom: 16px;
             box-sizing: border-box;
@@ -84,10 +86,33 @@
         }
 
         #personalInfoBlock {
-            padding: 20px;
+            padding: 10px;
             background-color: #f8bbd0;
             border-radius: 5px;
             margin-bottom: 20px;
+        }
+
+        .register-link {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            display: block;
+            margin-top: 15px;
+        }
+
+        .return-link {
+            text-decoration: none;
+            background-color: #ff9ee7;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .return-link:hover {
+            background-color: #f784bd;
         }
     </style>
 </head>
@@ -96,23 +121,27 @@
 
     <div id="container">
         <header>
-            <h1>ลงทะเบียนผู้ใช้บริการ</h1>
+            <div center> <img
+                    src="https://png.pngtree.com/png-clipart/20230914/original/pngtree-security-camera-clipart-an-image-of-a-camera-with-two-legs-png-image_11242185.png"
+                    width="25%"></div>
+            <h1>Real-Camera</h1>
         </header>
 
         <form id="catRegistrationForm">
             <div>
-                <label for="้nUser">Username :</label>
-                <input type="text" id="nUser" name="nUser" required>
+                <label for="้nName">Camera No:</label>
+                <input type="text" id="nName" name="nName" required>
             </div>
 
             <div>
-                <label for="้nPass">Password</label>
-                <input type="text" id="nPass" name="้nPass" required>
+                <label for="้nLine">Password id :</label>
+                <input type="text" id="n" name="้nLine" required>
             </div>
-            <div><a href="ManudLogin.html"><button type="button">ยืนยัน</button></a></div>
+
+
 
             <div>
-                <a href="Completed.html"><button type="button" onclick="submitForm()</button></a>
+                <a href="video1.html"><button type="button" onclick="submitForm()">ยืนยัน</button></a>
             </div>
         </form>
     </div>
@@ -121,8 +150,7 @@
         function submitForm() {
             var nName = document.getElementById('nName').value;
             var nLine = document.getElementById('nLine').value;
-            var nLocation = document.getElementById('nLocation').value;
-            var nNumber = document.getElementById('nNumber').value;
+
 
 
             console.log('ชื่อ:', catName);
